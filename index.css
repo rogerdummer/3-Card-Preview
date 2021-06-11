@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+    /*padding: 0;
+    margin: 0;*/
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 1320px;
+    background-color: cadetblue;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 320px;
+    height: 440px;
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+.card_logo {
+    margin: 49px 0 0 49px;
+}
+
+.card_title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 35px 0 0 49px;
+}
+
+.card_text {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 35px 0 0 49px;
+}
+
+.card_button {
+    width: 140px;
+    height: 45px;
+    margin: 25px 0 0 49px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#card_button1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+#card_button1:active {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+#card_button2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+#card_button2:active {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+#card_button3 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+#card_button3:active {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 850px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+    .card1,
+    .card2,
+    .card3 {
+        width: 34%;
+        height: 100%;
+    }
+    .card1 {
+        border-radius: 10px 0 0 10px;
+    }
+    .card3 {
+        border-radius: 0 10px 10px 0;
+    }
+    .card_logo {
+        margin: 44px 0 0 44px;
+    }
+    .card_title {
+        margin: 29px 0 0 44px;
+    }
+    .card_text {
+        display: flex;
+        flex-grow: 2;
+        font-size: 0.9rem;
+    }
+    .card_button {
+        margin: 75px 0 0 44px;
+    }
+}
